@@ -1,4 +1,4 @@
-2.1 Gissa det hemliga talet (B-nivå)
+2.1 Gissa det hemliga talet (C-nivå)
 ====================================
 [2-1-gissa-det-hemliga-talet.pdf](https://github.com/1dv402/kursmaterial/raw/master/Laborationsuppgifter/2-1-gissa-det-hemliga-talet.pdf)
 
