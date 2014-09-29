@@ -61,7 +61,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Du har inga fler gissningar&quot;.
+        ///   Looks up a localized string similar to Du har inga fler gissningar.
         /// </summary>
         internal static string Cannot_Guess {
             get {
@@ -70,7 +70,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Femte&quot;.
+        ///   Looks up a localized string similar to Femte.
         /// </summary>
         internal static string Fifth {
             get {
@@ -79,7 +79,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Första&quot;.
+        ///   Looks up a localized string similar to Första.
         /// </summary>
         internal static string First {
             get {
@@ -88,7 +88,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Fjärde&quot;.
+        ///   Looks up a localized string similar to Fjärde.
         /// </summary>
         internal static string Fourth {
             get {
@@ -97,7 +97,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;{0} gissningen: &quot;.
+        ///   Looks up a localized string similar to {0} gissningen: .
         /// </summary>
         internal static string Guess_Number {
             get {
@@ -106,7 +106,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;{0} är för högt.&quot;.
+        ///   Looks up a localized string similar to {0} är för högt..
         /// </summary>
         internal static string Outcome_High {
             get {
@@ -115,7 +115,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;{0} är för lågt&quot;.
+        ///   Looks up a localized string similar to {0} är för lågt.
         /// </summary>
         internal static string Outcome_Low {
             get {
@@ -124,7 +124,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;RÄTT GISSAT! Grattis du klarade det på {0} försöket.&quot; .
+        ///   Looks up a localized string similar to RÄTT GISSAT! Grattis du klarade det på {0} försöket..
         /// </summary>
         internal static string Outcome_Right {
             get {
@@ -133,7 +133,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Andra&quot;.
+        ///   Looks up a localized string similar to Andra.
         /// </summary>
         internal static string Second {
             get {
@@ -142,7 +142,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Sjunde&quot;.
+        ///   Looks up a localized string similar to Sjunde.
         /// </summary>
         internal static string Seventh {
             get {
@@ -151,7 +151,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Sjätte&quot;.
+        ///   Looks up a localized string similar to Sjätte.
         /// </summary>
         internal static string Sixth {
             get {
@@ -160,7 +160,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Tredje&quot;.
+        ///   Looks up a localized string similar to Tredje.
         /// </summary>
         internal static string Third {
             get {
@@ -169,7 +169,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Gissa det hemliga talet&quot;.
+        ///   Looks up a localized string similar to Gissa det hemliga talet.
         /// </summary>
         internal static string Title {
             get {

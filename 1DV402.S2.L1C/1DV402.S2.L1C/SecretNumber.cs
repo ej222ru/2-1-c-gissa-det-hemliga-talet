@@ -21,7 +21,6 @@ namespace _1DV402.S2.L1C
 		private int _count;		// number of made guesses
 		private GuessedNumber[] _guessedNumbers;  // collection of made guesses
 		private int? _number;		// The secret number
-		private int? _guess = null;
 		Random generator;
 
 		public SecretNumber()
@@ -37,14 +36,19 @@ namespace _1DV402.S2.L1C
 			Outcome = Outcome.Indefinite;
 			Count = 0;
 			Number = 0;
-			Array.Clear(_guessedNumbers, 0, _guessedNumbers.Length);
+
+			for (int i = 0; i < MaxNumberOfGuesses; i++)
+			{
+				GuessedNumbers[i].Number = default(int?);
+				GuessedNumbers[i].Outcome = default(Outcome);
+			}
 			Number = generator.Next(1, 100);
-		}
+		} 
 
 		public Outcome MakeGuess(int guess)
 		{
 			String order = "";
-							
+			Guess = guess;				
 
 			switch (Count)
 			{
@@ -76,9 +80,6 @@ namespace _1DV402.S2.L1C
 			}
 			if (Outcome != Outcome.NoMoreGuesses)
 			{
-				Console.Write(String.Format(Strings.Guess_Number, order));
-				Guess = int.Parse(Console.ReadLine());
-
 				if ((Guess < 1) || (Guess > 100))
 				{
 					throw new ArgumentOutOfRangeException();
@@ -126,7 +127,7 @@ namespace _1DV402.S2.L1C
 		{
 			get 
 			{ 
-				if (CanMakeGuess)
+				if (!CanMakeGuess)
 						return null;
 					else
 						return _number;
