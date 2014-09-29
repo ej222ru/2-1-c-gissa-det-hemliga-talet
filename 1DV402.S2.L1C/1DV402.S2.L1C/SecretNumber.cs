@@ -83,14 +83,22 @@ namespace _1DV402.S2.L1C
 				{
 					throw new ArgumentOutOfRangeException();
 				}
+
 				else if (Guess == _number)
 					Outcome = Outcome.Right;
 				else if (Guess < _number)
 					Outcome = Outcome.Low;
 				else if (Guess > _number)
 					Outcome = Outcome.High;
-				else if (Array.IndexOf(GuessedNumbers, Guess) != -1)
-					Outcome = Outcome.OldGuess;
+				int i = 0;
+				while (i < Count)
+				{
+					if (GuessedNumbers[i].Number == Guess)
+					{
+						Outcome = Outcome.OldGuess;
+					}
+					i++;
+				}	
 
 				GuessedNumbers[Count].Number = (int)Guess;
 				GuessedNumbers[Count].Outcome = Outcome;
