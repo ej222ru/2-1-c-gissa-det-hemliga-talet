@@ -35,14 +35,13 @@ namespace _1DV402.S2.L1C
 			Guess = null;
 			Outcome = Outcome.Indefinite;
 			Count = 0;
-			Number = 0;
 
 			for (int i = 0; i < MaxNumberOfGuesses; i++)
 			{
 				GuessedNumbers[i].Number = default(int?);
 				GuessedNumbers[i].Outcome = default(Outcome);
 			}
-			Number = generator.Next(1, 100);
+			this.Number = generator.Next(1, 100);
 		} 
 
 		public Outcome MakeGuess(int guess)
@@ -84,11 +83,11 @@ namespace _1DV402.S2.L1C
 				{
 					throw new ArgumentOutOfRangeException();
 				}
-				else if (Guess == Number)
+				else if (Guess == _number)
 					Outcome = Outcome.Right;
-				else if (Guess < Number)
+				else if (Guess < _number)
 					Outcome = Outcome.Low;
-				else if (Guess > Number)
+				else if (Guess > _number)
 					Outcome = Outcome.High;
 				else if (Array.IndexOf(GuessedNumbers, Guess) != -1)
 					Outcome = Outcome.OldGuess;
@@ -113,7 +112,10 @@ namespace _1DV402.S2.L1C
 
 		public bool CanMakeGuess 
 		{ 
-			get { return (Count < MaxNumberOfGuesses); } 
+			
+			get { 
+	//			Console.WriteLine(String.Format("Count:{0}   GuessedNumbers[Count].Outcome: {1}", Count, GuessedNumbers[Count].Outcome));
+				return ((Count < MaxNumberOfGuesses) && (GuessedNumbers[Count].Outcome != Outcome.Right)) ; } 
 		}
 
 		public int? Guess { get; private set; }
@@ -127,7 +129,7 @@ namespace _1DV402.S2.L1C
 		{
 			get 
 			{ 
-				if (!CanMakeGuess)
+				if (CanMakeGuess)
 						return null;
 					else
 						return _number;
