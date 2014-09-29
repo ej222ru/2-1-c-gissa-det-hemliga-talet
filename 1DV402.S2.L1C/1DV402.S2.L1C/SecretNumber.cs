@@ -123,7 +123,8 @@ namespace _1DV402.S2.L1C
 			
 			get { 
 	//			Console.WriteLine(String.Format("Count:{0}   GuessedNumbers[Count].Outcome: {1}", Count, GuessedNumbers[Count].Outcome));
-				return ((Count < MaxNumberOfGuesses) && (GuessedNumbers[Count].Outcome != Outcome.Right)) ; } 
+				return ((Count == 0) || (Count < MaxNumberOfGuesses) && (GuessedNumbers[Count-1].Outcome != Outcome.Right));
+			} 
 		}
 
 		public int? Guess { get; private set; }
