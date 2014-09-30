@@ -120,14 +120,26 @@
   <data name="Cannot_Guess" xml:space="preserve">
     <value>Du har inga fler gissningar</value>
   </data>
-  <data name="Fifth" xml:space="preserve">
-    <value>Femte</value>
-  </data>
-  <data name="First" xml:space="preserve">
+  <data name="Count_1" xml:space="preserve">
     <value>Första</value>
   </data>
-  <data name="Fourth" xml:space="preserve">
+  <data name="Count_2" xml:space="preserve">
+    <value>Andra</value>
+  </data>
+  <data name="Count_3" xml:space="preserve">
+    <value>Tredje</value>
+  </data>
+  <data name="Count_4" xml:space="preserve">
     <value>Fjärde</value>
+  </data>
+  <data name="Count_5" xml:space="preserve">
+    <value>Femte</value>
+  </data>
+  <data name="Count_6" xml:space="preserve">
+    <value>Sjätte</value>
+  </data>
+  <data name="Count_7" xml:space="preserve">
+    <value>Sjunde</value>
   </data>
   <data name="Guess_Number" xml:space="preserve">
     <value>{0} gissningen: </value>
@@ -140,18 +152,6 @@
   </data>
   <data name="Outcome_Right" xml:space="preserve">
     <value>RÄTT GISSAT! Grattis du klarade det på {0} försöket.</value>
-  </data>
-  <data name="Second" xml:space="preserve">
-    <value>Andra</value>
-  </data>
-  <data name="Seventh" xml:space="preserve">
-    <value>Sjunde</value>
-  </data>
-  <data name="Sixth" xml:space="preserve">
-    <value>Sjätte</value>
-  </data>
-  <data name="Third" xml:space="preserve">
-    <value>Tredje</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Gissa det hemliga talet</value>

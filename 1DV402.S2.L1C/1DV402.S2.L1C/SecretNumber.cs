@@ -38,8 +38,8 @@ namespace _1DV402.S2.L1C
 
 			for (int i = 0; i < MaxNumberOfGuesses; i++)
 			{
-				GuessedNumbers[i].Number = default(int?);
-				GuessedNumbers[i].Outcome = default(Outcome);
+				_guessedNumbers[i].Number = default(int?);
+				_guessedNumbers[i].Outcome = default(Outcome);
 			}
 			this.Number = generator.Next(1, 100);
 		} 
@@ -52,25 +52,25 @@ namespace _1DV402.S2.L1C
 			switch (Count)
 			{
 				case 0: 
-					order = Strings.First;
+					order = Strings.Count_1;
 					break;
 				case 1:
-					order = Strings.Second;
+					order = Strings.Count_2;
 					break;
 				case 2:
-					order = Strings.Third;
+					order = Strings.Count_3;
 					break;
 				case 3:
-					order = Strings.Fourth;
+					order = Strings.Count_4;
 					break;
 				case 4:
-					order = Strings.Fifth;
+					order = Strings.Count_5;
 					break;
 				case 5:
-					order = Strings.Sixth;
+					order = Strings.Count_6;
 					break;
 				case 6:
-					order = Strings.Seventh;
+					order = Strings.Count_7;
 					break;
 				default:
 					Outcome = Outcome.NoMoreGuesses;
@@ -100,8 +100,8 @@ namespace _1DV402.S2.L1C
 					i++;
 				}	
 
-				GuessedNumbers[Count].Number = (int)Guess;
-				GuessedNumbers[Count].Outcome = Outcome;
+				_guessedNumbers[Count].Number = (int)Guess;
+				_guessedNumbers[Count].Outcome = Outcome;
 
 				Count++;
 			}
@@ -131,7 +131,13 @@ namespace _1DV402.S2.L1C
 
 		public GuessedNumber[] GuessedNumbers
 		{
-			get { return _guessedNumbers; }  // byt mot  referens
+			
+			get 
+			{
+				GuessedNumber[] guessedNumbers = new GuessedNumber[_guessedNumbers.Length]; 
+				Array.Copy(_guessedNumbers, guessedNumbers, _guessedNumbers.Length);
+				return guessedNumbers;
+			} 
 		}
 
 		public int? Number

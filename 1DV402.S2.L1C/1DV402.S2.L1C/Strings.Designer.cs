@@ -70,29 +70,65 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Femte.
+        ///   Looks up a localized string similar to Första.
         /// </summary>
-        internal static string Fifth {
+        internal static string Count_1 {
             get {
-                return ResourceManager.GetString("Fifth", resourceCulture);
+                return ResourceManager.GetString("Count_1", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Första.
+        ///   Looks up a localized string similar to Andra.
         /// </summary>
-        internal static string First {
+        internal static string Count_2 {
             get {
-                return ResourceManager.GetString("First", resourceCulture);
+                return ResourceManager.GetString("Count_2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tredje.
+        /// </summary>
+        internal static string Count_3 {
+            get {
+                return ResourceManager.GetString("Count_3", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Fjärde.
         /// </summary>
-        internal static string Fourth {
+        internal static string Count_4 {
             get {
-                return ResourceManager.GetString("Fourth", resourceCulture);
+                return ResourceManager.GetString("Count_4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Femte.
+        /// </summary>
+        internal static string Count_5 {
+            get {
+                return ResourceManager.GetString("Count_5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sjätte.
+        /// </summary>
+        internal static string Count_6 {
+            get {
+                return ResourceManager.GetString("Count_6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sjunde.
+        /// </summary>
+        internal static string Count_7 {
+            get {
+                return ResourceManager.GetString("Count_7", resourceCulture);
             }
         }
         
@@ -129,42 +165,6 @@ namespace _1DV402.S2.L1C {
         internal static string Outcome_Right {
             get {
                 return ResourceManager.GetString("Outcome_Right", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Andra.
-        /// </summary>
-        internal static string Second {
-            get {
-                return ResourceManager.GetString("Second", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sjunde.
-        /// </summary>
-        internal static string Seventh {
-            get {
-                return ResourceManager.GetString("Seventh", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Sjätte.
-        /// </summary>
-        internal static string Sixth {
-            get {
-                return ResourceManager.GetString("Sixth", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tredje.
-        /// </summary>
-        internal static string Third {
-            get {
-                return ResourceManager.GetString("Third", resourceCulture);
             }
         }
         
