@@ -61,7 +61,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Du har inga fler gissningar.
+        ///   Looks up a localized string similar to Du har inga fler gissningar..
         /// </summary>
         internal static string Cannot_Guess {
             get {
@@ -142,7 +142,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} är för högt..
+        ///   Looks up a localized string similar to {0} är för högt. .
         /// </summary>
         internal static string Outcome_High {
             get {
@@ -151,11 +151,20 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} är för lågt.
+        ///   Looks up a localized string similar to {0} är för lågt. .
         /// </summary>
         internal static string Outcome_Low {
             get {
                 return ResourceManager.GetString("Outcome_Low", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} är en gammal gissning. .
+        /// </summary>
+        internal static string Outcome_OldGuess {
+            get {
+                return ResourceManager.GetString("Outcome_OldGuess", resourceCulture);
             }
         }
         

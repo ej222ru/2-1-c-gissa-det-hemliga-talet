@@ -32,7 +32,6 @@ namespace _1DV402.S2.L1C
 
 		public void Initialize() 
 		{
-			Console.Clear();
 			Guess = null;
 			Outcome = Outcome.Indefinite;
 			Count = 0;

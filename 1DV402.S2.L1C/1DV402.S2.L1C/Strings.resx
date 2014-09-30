@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Cannot_Guess" xml:space="preserve">
-    <value>Du har inga fler gissningar</value>
+    <value>Du har inga fler gissningar.</value>
   </data>
   <data name="Count_1" xml:space="preserve">
     <value>Första</value>
@@ -145,10 +145,13 @@
     <value>{0} gissningen: </value>
   </data>
   <data name="Outcome_High" xml:space="preserve">
-    <value>{0} är för högt.</value>
+    <value>{0} är för högt. </value>
   </data>
   <data name="Outcome_Low" xml:space="preserve">
-    <value>{0} är för lågt</value>
+    <value>{0} är för lågt. </value>
+  </data>
+  <data name="Outcome_OldGuess" xml:space="preserve">
+    <value>{0} är en gammal gissning. </value>
   </data>
   <data name="Outcome_Right" xml:space="preserve">
     <value>RÄTT GISSAT! Grattis du klarade det på {0} försöket.</value>
