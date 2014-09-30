@@ -178,7 +178,7 @@ namespace _1DV402.S2.L1C {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gissa det hemliga talet.
+        ///   Looks up a localized string similar to Gissa det hemliga talet - nivå C.
         /// </summary>
         internal static string Title {
             get {

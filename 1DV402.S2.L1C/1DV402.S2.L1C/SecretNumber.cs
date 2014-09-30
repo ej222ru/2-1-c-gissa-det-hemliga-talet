@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace _1DV402.S2.L1C
 {
-	public enum Outcome		// possible status of a guess
+	// possible status of a guess
+	public enum Outcome		
 	{
 		Indefinite,
 		Low,
@@ -18,11 +19,15 @@ namespace _1DV402.S2.L1C
 	public class SecretNumber
 	{
 		public const int MaxNumberOfGuesses = 7;
-		private int _count;		// number of made guesses
-		private GuessedNumber[] _guessedNumbers;  // collection of made guesses
-		private int? _number;		// The secret number
+		// Declare and initialize local variables
+		int _count;							// number of made guesses
+		GuessedNumber[] _guessedNumbers;	// collection of made guesses
+		int? _number;						// The secret number
 		Random generator;
 
+		/// <summary>
+		/// Constructor för class SecretNumber. 
+		/// </summary>
 		public SecretNumber()
 		{
 			_guessedNumbers = new GuessedNumber[MaxNumberOfGuesses];
@@ -30,17 +35,22 @@ namespace _1DV402.S2.L1C
 			Initialize();
 		}
 
+		/******************/
+		/* Member Methods */
+		/******************/
+
 		public void Initialize() 
 		{
+			// Initialize global properties
 			Guess = null;
 			Outcome = Outcome.Indefinite;
 			Count = 0;
-
 			for (int i = 0; i < MaxNumberOfGuesses; i++)
 			{
 				_guessedNumbers[i].Number = default(int?);
 				_guessedNumbers[i].Outcome = default(Outcome);
 			}
+			// Generate a secret number in range 1-100
 			this.Number = generator.Next(1, 100);
 		} 
 
@@ -77,6 +87,7 @@ namespace _1DV402.S2.L1C
 					break;
 
 			}
+			// Determine status outcome of a guess
 			if (Outcome != Outcome.NoMoreGuesses)
 			{
 				if ((Guess < 1) || (Guess > 100))
@@ -102,7 +113,7 @@ namespace _1DV402.S2.L1C
 
 				_guessedNumbers[Count].Number = (int)Guess;
 				_guessedNumbers[Count].Outcome = Outcome;
-
+				// Increment the counter for made guesses
 				Count++;
 			}
 			return Outcome;
@@ -117,21 +128,23 @@ namespace _1DV402.S2.L1C
 			get { return _count; }
 			private set {  _count = value; }
 		}
-
+		/// <summary>
+		/// Determine if a new guess is possible
+		/// Test on number of already made guesses and that a correct guess has not been made
+		/// </summary>
 		public bool CanMakeGuess 
 		{ 
-			
 			get { 
-	//			Console.WriteLine(String.Format("Count:{0}   GuessedNumbers[Count].Outcome: {1}", Count, GuessedNumbers[Count].Outcome));
 				return ((Count == 0) || (Count < MaxNumberOfGuesses) && (GuessedNumbers[Count-1].Outcome != Outcome.Right));
 			} 
 		}
 
 		public int? Guess { get; private set; }
-
+		/// <summary>
+		/// Return a reference to made guesses. Retain integrity of source
+		/// </summary>
 		public GuessedNumber[] GuessedNumbers
 		{
-			
 			get 
 			{
 				GuessedNumber[] guessedNumbers = new GuessedNumber[_guessedNumbers.Length]; 
@@ -139,7 +152,9 @@ namespace _1DV402.S2.L1C
 				return guessedNumbers;
 			} 
 		}
-
+		/// <summary>
+		/// Return null as long as a new guess is possible, otherwise the secret number
+		/// </summary>
 		public int? Number
 		{
 			get 
