@@ -50,8 +50,8 @@ namespace _1DV402.S2.L1C
 				_guessedNumbers[i].Number = default(int?);
 				_guessedNumbers[i].Outcome = default(Outcome);
 			}
-			// Generate a secret number in range 1-100
-			this.Number = generator.Next(1, 100);
+			// Generate a secret number in closed range 1-100
+			this.Number = generator.Next(1, 101);
 		} 
 
 		public Outcome MakeGuess(int guess)
