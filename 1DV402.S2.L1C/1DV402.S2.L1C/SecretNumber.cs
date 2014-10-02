@@ -109,12 +109,15 @@ namespace _1DV402.S2.L1C
 						Outcome = Outcome.OldGuess;
 					}
 					i++;
-				}	
+				}
+				if (Outcome != Outcome.OldGuess)
+				{
+					_guessedNumbers[Count].Number = (int)Guess;
+					_guessedNumbers[Count].Outcome = Outcome;
+					// Increment the counter for made guesses
 
-				_guessedNumbers[Count].Number = (int)Guess;
-				_guessedNumbers[Count].Outcome = Outcome;
-				// Increment the counter for made guesses
-				Count++;
+					Count++;
+				}
 			}
 			return Outcome;
 		}
