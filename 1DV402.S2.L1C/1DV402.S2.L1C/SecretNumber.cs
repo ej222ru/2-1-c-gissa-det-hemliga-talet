@@ -20,10 +20,10 @@ namespace _1DV402.S2.L1C
 	{
 		public const int MaxNumberOfGuesses = 7;
 		// Declare and initialize local variables
-		int _count;							// number of made guesses
-		GuessedNumber[] _guessedNumbers;	// collection of made guesses
-		int? _number;						// The secret number
-		Random generator;
+		private int _count;							// number of made guesses
+		private GuessedNumber[] _guessedNumbers;	// collection of made guesses
+		private int? _number;						// The secret number
+		private Random generator;
 
 		/// <summary>
 		/// Constructor för class SecretNumber. 
@@ -51,7 +51,7 @@ namespace _1DV402.S2.L1C
 				_guessedNumbers[i].Outcome = default(Outcome);
 			}
 			// Generate a secret number in closed range 1-100
-			this.Number = generator.Next(1, 101);
+			Number = generator.Next(1, 101);
 		} 
 
 		public Outcome MakeGuess(int guess)
